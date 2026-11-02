@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeviceLab Vietnam Open Engineering Hub: RS485, Datalogger Thông Tư 10, EMS & Thiết Kế Mạch PCB</title>
+<meta name="description" content="Thư viện tài liệu kỹ thuật mở của DeviceLab Việt Nam: Bộ chuyển đổi RS485 sang Ethernet cách ly 3.0kV, Datalogger quan trắc nước thải Thông tư 10/2021, Tủ RTU SCADA, Đồng hồ điện 3 pha RS485 và Thiết kế mạch điện tử Hà Nội.">
+<link rel="canonical" href="https://manhthaodinh.github.io/">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #0f172a; background: #f8fafc; margin: 0; padding: 0; line-height: 1.65; }
+  header { background: #0f172a; color: #ffffff; padding: 36px 20px; border-bottom: 4px solid #0284c7; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  h1 { margin: 0 0 10px; font-size: 1.85rem; line-height: 1.3; }
+  h2 { color: #0f172a; font-size: 1.3rem; border-left: 4px solid #0284c7; padding-left: 12px; margin: 32px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 18px; margin: 20px 0; }
+  .card { background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 18px 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .card h3 { margin: 0 0 10px; font-size: 1.05rem; color: #0284c7; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin-bottom: 8px; font-size: 0.94rem; }
+  a { color: #0284c7; text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .cta-bar { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .btn { display: inline-block; padding: 8px 16px; background: #0284c7; color: #ffffff; border-radius: 6px; font-size: 0.9rem; font-weight: 600; }
+  footer { margin-top: 48px; padding: 24px 20px; background: #e2e8f0; font-size: 0.88rem; color: #334155; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>DeviceLab Vietnam: Industrial IoT Hardware, Circular 10 Datalogger &amp; Custom PCB R&amp;D Hub</h1>
+    <p style="margin:0;color:#cbd5e1;font-size:1rem;">Tài liệu kỹ thuật phần cứng công nghiệp, sơ đồ đấu nối chống nhiễu EMC, mã nguồn Modbus/MQTT và quy chuẩn quan trắc tự động tại Việt Nam.</p>
+    <div class="cta-bar">
+      <a class="btn" href="https://devicelab.vn/">Trang chủ DeviceLab.vn</a>
+      <a class="btn" href="https://devicelab.vn/thiet-ke-mach-dien-tu/">Dịch vụ Thiết kế mạch điện tử Hà Nội</a>
+      <a class="btn" href="https://devicelab.vn/datalogger-quan-trac-moi-truong-tt10/">Giải pháp Datalogger Thông tư 10</a>
+      <a class="btn" href="https://devicelab.vn/san-pham/dl-rs485/">Bộ chuyển đổi cách ly DL-RS485</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <h2>1. Chuyên đề trọng điểm (12 Core Engineering &amp; Product Hubs)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Giao tiếp Công nghiệp RS485, Modbus &amp; Edge Gateway</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-rs485-sang-ethernet/">Bộ chuyển đổi RS485 sang Ethernet công nghiệp (Modbus RTU/TCP)</a></li>
+        <li><a href="https://devicelab.vn/san-pham/dl-rs485/">Thiết bị chuyển đổi tín hiệu RS485 cách ly 3.0kV DL-RS485</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/gateway-modbus-rs485/">Cẩm nang chọn Gateway Modbus RS485 sang Ethernet &amp; 4G LTE</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-modbus-rtu-sang-tcp/">Bộ chuyển đổi Modbus RTU sang TCP: Kiến trúc Polling &amp; Multi-Master</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/cap-tin-hieu-rs485-chong-nhieu-tieu-chuan-chon/">Tiêu chuẩn cáp tín hiệu RS485 chống nhiễu 120Ω (22AWG/24AWG)</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/so-sanh-thay-the-modbus-gateway-moxa-mgate-advantech-usr-3onedata/">Đối chiếu thay thế Moxa MGate MB3180, Advantech EKI-1221 &amp; USR</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-4-20ma-analog-sang-rs485-remote-io-modbus/">Bộ chuyển đổi 4-20mA sang RS485 Modbus &amp; Remote I/O</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Quan trắc Môi trường Thông tư 10/2021, QCVN 40:2025 &amp; Tủ RTU</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/datalogger-quan-trac-moi-truong-tt10/">Giải pháp Datalogger quan trắc môi trường Thông tư 10/2021/TT-BTNMT</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/datalogger-quan-trac-nuoc-thai-tu-dong/">Kiến trúc trạm quan trắc nước thải tự động, liên tục</a></li>
+        <li><a href="https://devicelab.vn/san-pham/dl-env10/">Thiết bị Datalogger quan trắc môi trường DL-ENV10</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/quy-chuan-nuoc-thai-cong-nghiep-qcvn-40-quan-trac-tu-dong/">Quy chuẩn nước thải công nghiệp QCVN 40:2025/BTNMT</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/data-logger-nhiet-do-da-kenh-pt100-bo-ghi-nhiet-do-cong-nghiep/">Data logger nhiệt độ đa kênh PT100 &amp; bộ ghi nhiệt độ công nghiệp</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/tu-rtu-thiet-bi-remote-terminal-unit-scada-nha-may-nuoc-thuy-dien/">Tủ RTU &amp; Thiết bị Remote Terminal Unit SCADA nhà máy nước, thủy điện</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/he-thong-quan-trac-nuoc-ngam-tu-dong/">Hệ thống quan trắc nước ngầm tự động chuẩn Nghị định 53/2024</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/giai-phap-thay-the-datalogger-campbell-cr1000x-cr300-oem-viet-nam/">Giải pháp thay thế Datalogger Campbell CR1000X / CR300 OEM Việt Nam</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Thiết kế Mạch Điện tử Hà Nội, Gia công PCBA &amp; Firmware Nhúng</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/thiet-ke-mach-dien-tu/">Dịch vụ thiết kế mạch điện tử theo yêu cầu tại Hà Nội</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/cong-ty-thiet-ke-mach-dien-tu-ha-noi/">Kinh nghiệm chọn công ty thiết kế mạch điện tử Hà Nội uy tín</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/dich-vu-thiet-ke-pcb/">Dịch vụ thiết kế PCB 2-8 lớp &amp; vẽ mạch nguyên lý chuẩn IPC</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/lam-mach-dien-tu-theo-yeu-cau/">Quy trình đặt làm mạch điện tử theo yêu cầu (EVT/DVT/PVT)</a></li>
+        <li><a href="https://devicelab.vn/gia-cong-pcb/">Dịch vụ gia công PCB &amp; hàn mạch SMT (PCBA) trọn gói</a></li>
+        <li><a href="https://devicelab.vn/phat-trien-firmware/">Dịch vụ lập trình Firmware nhúng (STM32, ESP32, RTOS, Linux)</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/cong-ty-lap-trinh-nhung-firmware-iot/">Công ty lập trình nhúng, Firmware &amp; IoT tại Việt Nam</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Giám sát Điện năng 3 Pha EMS, Solar PPC &amp; Thu thập Dữ liệu PLC</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/giam-sat-dien-nang-nha-may/">Hệ thống giám sát điện năng nhà máy 3 pha &amp; phần mềm EMS</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/dong-ho-do-dien-3-pha-rs485-giam-sat-dien-nang/">Hướng dẫn chọn đồng hồ đo điện 3 pha RS485 &amp; thanh ghi Modbus</a></li>
+        <li><a href="https://devicelab.vn/san-pham/dl-p300/">Module đo đếm điện năng 3 pha RS485 DL-P300</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-dieu-khien-cong-suat-phat-ppc-smartlogger-3000-zero-export-evn/">Bộ điều khiển công suất phát PPC, SmartLogger 3000 &amp; Zero Export EVN</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/thiet-bi-thu-thap-du-lieu-plc-iot-gateway/">Thiết bị thu thập dữ liệu PLC (Siemens, Mitsubishi, Delta)</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/he-thong-giam-sat-may-moc-san-xuat-andon-oee/">Hệ thống giám sát máy móc sản xuất Andon OEE</a></li>
+        <li><a href="https://devicelab.vn/san-pham/dl-m400/">Module IoT gắn tủ máy công nghiệp DL-M400</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2. Danh mục Tài liệu Kỹ thuật Chuyên sâu Mới Xuất bản (Oct - Nov 2026)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Truyền thông Công nghiệp &amp; Datalogger</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-rs485-sang-4g-lte-cong-nghiep/">Bộ chuyển đổi RS485 sang 4G LTE công nghiệp</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/datalogger-rs485-modbus-4-20ma-4g-cong-nghiep/">Datalogger RS485 Modbus &amp; 4-20mA đa kênh</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/hub-chia-nhanh-repeater-cach-ly-chong-set-rs485/">Hub chia nhánh, Repeater &amp; cách ly chống sét RS485</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-rs232-sang-rs485-cach-ly-cong-nghiep/">Bộ chuyển đổi RS232 sang RS485 cách ly quang</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-chuyen-doi-rs485-sang-quang-single-mode-multi-mode/">Bộ chuyển đổi RS485 sang quang Single-mode/Multi-mode</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/gateway-chuyen-doi-modbus-sang-profinet-bacnet-opc-ua/">Gateway chuyển đổi Modbus sang PROFINET, BACnet, OPC UA</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/ket-noi-can-dien-tu-dau-can-rs232-rs485-len-may-tinh-erp-mes/">Kết nối đầu cân điện tử RS232/RS485 lên máy tính &amp; ERP/MES</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Quan trắc Nước thải, Nước ngầm &amp; DAQ Công nghiệp</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/kien-thuc/phan-mem-envisoft-quan-trac-moi-truong-huong-dan-ket-noi-datalogger/">Hướng dẫn kết nối Datalogger với phần mềm Envisoft Sở TN&amp;MT</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-ghi-du-lieu-datalogger-cong-nghiep/">Bộ ghi dữ liệu Datalogger công nghiệp đa kênh</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/ket-noi-bo-hien-thi-hach-sc200-sc1000-endress-hauser-rsg45-datalogger-tt10/">Kết nối bộ hiển thị Hach SC200/SC1000 &amp; Endress+Hauser RSG45</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/ho-so-moi-thau-tram-quan-trac-thiet-bi-nhan-va-truyen-du-lieu-tt10/">Thông số HSMT thiết bị nhận và truyền dữ liệu Thông tư 10</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/bo-ghi-du-lieu-khong-giay-paperless-recorder-yokogawa-hioki-graphtec/">Bộ ghi dữ liệu không giấy Paperless Recorder</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/he-thong-thu-thap-du-lieu-daq-cong-nghiep-advantech-adam-moxa-iologik/">Hệ thống thu thập dữ liệu DAQ công nghiệp</a></li>
+        <li><a href="https://devicelab.vn/kien-thuc/so-sanh-datalogger-cap-nuoc-cello-4s-technolog-multilog-permalog/">So sánh Datalogger cấp nước Cello 4s, Multilog &amp; giải pháp OEM</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Datasheet Thiết bị Phần cứng (PDF) &amp; English Guides</h3>
+      <ul>
+        <li><a href="https://devicelab.vn/wp-content/uploads/datasheets/DeviceLab-DL-RS485-Datasheet.pdf">Datasheet DL-RS485: Bộ chuyển đổi RS485 cách ly 3.0kV (PDF)</a></li>
+        <li><a href="https://devicelab.vn/wp-content/uploads/datasheets/DeviceLab-DL-ENV10-Datasheet.pdf">Datasheet DL-ENV10: Datalogger quan trắc Thông tư 10 (PDF)</a></li>
+        <li><a href="https://devicelab.vn/wp-content/uploads/datasheets/DeviceLab-DL-GW200-Datasheet.pdf">Datasheet DL-GW200: Industrial Modbus/MQTT Edge Gateway (PDF)</a></li>
+        <li><a href="https://devicelab.vn/wp-content/uploads/datasheets/DeviceLab-DL-P300-Datasheet.pdf">Datasheet DL-P300: 3-Phase RS485 Energy Metering Module (PDF)</a></li>
+        <li><a href="https://devicelab.vn/wp-content/uploads/datasheets/DeviceLab-DL-M400-Datasheet.pdf">Datasheet DL-M400: Industrial Machinery IoT Module (PDF)</a></li>
+        <li><a href="https://devicelab.vn/en/articles/rs485-to-ethernet-converter-selection-guide/">Industrial RS485 to Ethernet Converter Selection Guide</a></li>
+        <li><a href="https://devicelab.vn/en/environmental-monitoring-datalogger/">Circular 10 Environmental Monitoring Datalogger</a></li>
+        <li><a href="https://devicelab.vn/en/custom-pcb-design/">Custom PCB &amp; Electronic Circuit Design Service Vietnam</a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>
+  <p><strong>CÔNG TY TNHH DEVICELAB VIỆT NAM (DeviceLab R&amp;D Center)</strong> · Tầng 4, Tòa nhà HUD3, 121-123 Tô Hiệu, Hà Đông, Hà Nội · Hotline/Zalo Kỹ sư trưởng R&amp;D: <a href="https://zalo.me/0982503355">0982 503 355</a> · Website: <a href="https://devicelab.vn/">https://devicelab.vn/</a></p>
+</footer>
+</body>
+</html>

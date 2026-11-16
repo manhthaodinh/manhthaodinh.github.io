@@ -62,3 +62,5 @@ Official open engineering reference hubs, hardware datasheets, and compliance ap
 - [Viblo: Checklist 12 điểm kiểm tra Schematic & Layout PCB công nghiệp vượt chuẩn EMC](https://viblo.asia/p/checklist-12-diem-kiem-tra-schematic-layout-pcb-cong-nghiep-truoc-khi-gui-fab-de-vuot-bai-test-emc-iec-61000-4-wd43EXawLX9)
 - [Dev.to: Designing Industrial RS485 Circuits for High-EMI Factory Environments](https://dev.to/devicelabvn/designing-industrial-rs485-circuits-for-high-emi-factory-environments-2500vrms-isolation-600w-2114)
 - [Dev.to: Store-and-Forward Telemetry Architecture for Environmental Monitoring Dataloggers](https://dev.to/devicelabvn/store-and-forward-telemetry-architecture-for-environmental-monitoring-dataloggers-circular-4b2i)
+- [DeviceLab R&D: Thiết kế mạch chuyển đổi RS485 sang Ethernet công nghiệp (W5500 vs LAN8720 & Cách ly 3kV)](https://devicelab.vn/kien-thuc/thiet-ke-mach-chuyen-doi-rs485-sang-ethernet-w5500-lan8720-cach-ly-3kv/)
+- [DeviceLab R&D: Thiết kế mạch nguồn công nghiệp 24VDC (P-MOSFET, LM5164 vs MP2451 & Layout 4 lớp EMC)](https://devicelab.vn/kien-thuc/thiet-ke-mach-nguon-cong-nghiep-24vdc-buck-cach-ly-chong-nhieu-plc/)
